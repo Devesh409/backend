@@ -67,6 +67,16 @@ class EBook(BaseModel):
     word_count: int
     uploaded_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
+class EBookSummary(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+    id: str
+    user_id: str
+    title: str
+    file_type: str
+    file_path: str
+    word_count: int
+    uploaded_at: datetime
+
 class QuestionGenerationRequest(BaseModel):
     ebook_id: str
     question_types: List[str]
