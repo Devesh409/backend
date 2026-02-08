@@ -201,7 +201,7 @@ async def upload_ebook(file: UploadFile = File(...), current_user: User = Depend
     
     return ebook
 
-@api_router.get("/ebooks", response_model=List[EBook])
+@api_router.get("/ebooks", response_model=List[EBookSummary])
 async def get_ebooks(current_user: User = Depends(get_current_user)):
     ebooks = await db.ebooks.find({"user_id": current_user.id}, {"_id": 0, "extracted_text": 0}).to_list(100)
     
