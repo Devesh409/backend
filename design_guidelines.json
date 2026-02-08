@@ -1,0 +1,174 @@
+{
+  "brand_identity": {
+    "name": "EduQG AI",
+    "mission": "Transforming static educational content into dynamic, intelligent assessments.",
+    "tone": "Intelligent, Trustworthy, Efficient, Academic yet Modern",
+    "archetype": "The Smart Academic (Archetype 4 variant)",
+    "theme_mode": "light_preferred"
+  },
+  "typography": {
+    "font_providers": ["Google Fonts"],
+    "headings": {
+      "family": "Fraunces",
+      "weights": ["300", "400", "600", "700"],
+      "usage": "Main headings, Landing page hero, Section titles. Use 'Soft' axis if available for a friendlier tone.",
+      "fallback": "serif"
+    },
+    "body": {
+      "family": "Public Sans",
+      "weights": ["400", "500", "600"],
+      "usage": "UI elements, dashboard text, reading content.",
+      "fallback": "sans-serif"
+    },
+    "handwriting": {
+      "family": "Caveat, Homemade Apple, Reenie Beanie",
+      "usage": "Simulated handwritten assignments. Randomize between these for 'multiple styles'.",
+      "fallback": "cursive"
+    },
+    "monospace": {
+      "family": "JetBrains Mono",
+      "usage": "Code snippets, technical data, ID strings.",
+      "fallback": "monospace"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#0F172A",
+        "foreground": "#F8FAFC",
+        "description": "Deep Ink Slate - represents authority and ink on paper."
+      },
+      "secondary": {
+        "DEFAULT": "#F1F5F9",
+        "foreground": "#0F172A",
+        "description": "Paper White/Light Grey - for backgrounds and secondary buttons."
+      },
+      "accent": {
+        "DEFAULT": "#4F46E5",
+        "foreground": "#FFFFFF",
+        "description": "Intellect Indigo - represents AI and technology."
+      },
+      "success": {
+        "DEFAULT": "#10B981",
+        "description": "Grade Green - for correct answers and success states."
+      },
+      "warning": {
+        "DEFAULT": "#F59E0B",
+        "description": "Attention Amber - for warnings or medium difficulty."
+      },
+      "destructive": {
+        "DEFAULT": "#EF4444",
+        "description": "Correction Red - for errors or deletions."
+      },
+      "ink": {
+        "blue": "#000080",
+        "black": "#1a1a1a",
+        "description": "Specific colors for the handwriting simulation feature."
+      }
+    },
+    "gradients": {
+      "ai_glow": "linear-gradient(135deg, #4F46E5 0%, #818CF8 100%)",
+      "paper_texture": "linear-gradient(to bottom right, #ffffff, #f8fafc)"
+    }
+  },
+  "layout": {
+    "spacing_scale": "generous",
+    "container_padding": "p-6 md:p-12",
+    "border_radius": {
+      "default": "0.75rem",
+      "sm": "0.5rem",
+      "lg": "1rem",
+      "full": "9999px"
+    },
+    "grid_system": {
+      "dashboard": "grid-cols-1 md:grid-cols-12 gap-6",
+      "cards": "grid-cols-1 md:grid-cols-3 gap-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 rounded-full px-8 py-3 font-medium",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-full px-6 py-2 font-medium",
+      "ghost": "hover:bg-accent/10 hover:text-accent transition-colors rounded-lg px-4 py-2",
+      "ai_action": "bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-indigo-200 shadow-lg hover:shadow-indigo-300 hover:scale-[1.02] transition-all rounded-full"
+    },
+    "cards": {
+      "style": "bg-white border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300 rounded-xl overflow-hidden",
+      "dashboard_widget": "p-6 flex flex-col justify-between h-full"
+    },
+    "inputs": {
+      "style": "bg-slate-50 border-slate-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all rounded-lg"
+    },
+    "navigation": {
+      "sidebar": "bg-slate-900 text-slate-300 w-64 h-screen fixed left-0 top-0 border-r border-slate-800",
+      "sidebar_link": "flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-800 hover:text-white transition-colors",
+      "sidebar_link_active": "bg-indigo-600 text-white shadow-lg shadow-indigo-900/20"
+    }
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "soft": "0 4px 20px -2px rgba(0, 0, 0, 0.05)",
+      "float": "0 10px 40px -10px rgba(79, 70, 229, 0.1)"
+    },
+    "textures": {
+      "noise": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")"
+    },
+    "glassmorphism": {
+      "backdrop": "backdrop-blur-md bg-white/70 border border-white/20 shadow-sm"
+    }
+  },
+  "motion": {
+    "page_transition": {
+      "initial": { "opacity": 0, "y": 10 },
+      "animate": { "opacity": 1, "y": 0 },
+      "exit": { "opacity": 0, "y": -10 },
+      "transition": { "duration": 0.3, "ease": "easeOut" }
+    },
+    "hover_lift": "hover:-translate-y-1 transition-transform duration-300 ease-out",
+    "ai_pulse": "animate-pulse"
+  },
+  "image_urls": {
+    "landing_hero": {
+      "url": "https://images.unsplash.com/photo-1741699428553-41c8e5bd894d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHw0fHx1bml2ZXJzaXR5JTIwc3R1ZGVudCUyMHN0dWR5aW5nJTIwbGlicmFyeXxlbnwwfHx8fDE3NzA1NjM4Mzh8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Student studying in a historic library",
+      "category": "hero"
+    },
+    "feature_ai": {
+      "url": "https://images.unsplash.com/photo-1765046255517-412341954c4c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBuZXR3b3JrJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MDU2Mzg0MHww&ixlib=rb-4.1.0&q=85",
+      "alt": "Abstract AI network visualization",
+      "category": "feature"
+    },
+    "student_group": {
+      "url": "https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg",
+      "alt": "Group of students studying together",
+      "category": "social_proof"
+    },
+    "tech_abstract": {
+      "url": "https://images.unsplash.com/photo-1678957949479-b1e876bee3f1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBuZXR3b3JrJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MDU2Mzg0MHww&ixlib=rb-4.1.0&q=85",
+      "alt": "AI Chip concept",
+      "category": "technology"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'lucide-react' for icons. Use 'framer-motion' for page transitions.",
+    "2. FONTS: Import 'Fraunces', 'Public Sans', 'Caveat', 'Homemade Apple', and 'Reenie Beanie' from Google Fonts in index.css.",
+    "3. LAYOUT: Implement a 'DashboardLayout' component with a fixed sidebar and scrollable main content area. Use the 'Bento' grid for the dashboard home.",
+    "4. AI GENERATION UI: Create a split-view interface. Left side: Document Viewer (mock with an iframe or placeholder). Right side: Question Generator form.",
+    "5. HANDWRITING: For the export preview, create a container with a paper texture background (use CSS pattern) and apply the selected handwriting font and ink color.",
+    "6. COMPONENTS: Use Shadcn UI components but override the default radius to '0.75rem' and use the 'Fraunces' font for all Card titles and Dialog titles.",
+    "7. LANDING PAGE: Use the 'landing_hero' image with a heavy overlay (bg-slate-900/80) to make white text pop. Use 'Fraunces' for the main headline: 'Turn Textbooks into Tests in Seconds'.",
+    "8. DATA-TESTID: Ensure every button, input, and card has a unique 'data-testid' attribute (e.g., 'upload-btn', 'generate-questions-btn').",
+    "9. THEME: Default to LIGHT mode. The 'Dark' mode should be a deep 'Navy/Slate' theme, not pitch black.",
+    "10. FILE UPLOAD: Use a drag-and-drop zone with a dashed border (border-dashed) and a subtle blue background (bg-indigo-50) on hover."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Avoid generic 'AI slop' designs. No default centered layouts without purpose.",
+    "Use 2-3x more spacing than typical. 'p-8' is the new 'p-4'.",
+    "Never use 'transition: all'. Animate specific properties.",
+    "Use 'sonner' for toasts.",
+    "Ensure all interactive elements have hover states.",
+    "Do not use 'Inter' for headings. Use 'Fraunces'.",
+    "Use 'Public Sans' for body text.",
+    "Respect the 'Deep Ink' primary color strategy."
+  ]
+}
