@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, FileText, Sparkles, TrendingUp } from 'lucide-react';
+import { BookOpen, FileText, Sparkles, TrendingUp, Upload } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ebooksAPI, questionsAPI } from '@/utils/api';
