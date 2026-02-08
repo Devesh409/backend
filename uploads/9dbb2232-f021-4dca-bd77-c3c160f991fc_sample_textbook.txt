@@ -1,0 +1,19 @@
+
+        This is a sample educational text for testing the question generation system.
+        
+        Chapter 1: Introduction to Computer Science
+        Computer science is the study of computational systems and the design of computer systems and their applications.
+        It involves the study of algorithms, data structures, and the design and analysis of computational systems.
+        
+        Key concepts include:
+        1. Programming languages and software development
+        2. Data structures and algorithms
+        3. Computer systems and architecture
+        4. Database systems and data management
+        5. Artificial intelligence and machine learning
+        
+        Chapter 2: Programming Fundamentals
+        Programming is the process of creating instructions for computers to execute.
+        Variables are used to store data, and functions are used to organize code into reusable blocks.
+        Control structures like loops and conditionals control the flow of program execution.
+        
